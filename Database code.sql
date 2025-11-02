@@ -1,0 +1,10 @@
+CREATE DATABASE form;
+USE form;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    pass_word VARCHAR(100) NOT NULL,
+    gender VARCHAR(10) NOT NULL
+);
